@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(contactForm);
 
             try {
-                const res = await fetch('https://corepixeltechnology.com/contactus.php', {
+                const res = await fetch('https://www.corepixeltechnology.com/contactus.php', {
                     method: 'POST',
                     // headers: {
                     //     'Content-Type': 'application/json'

@@ -1030,15 +1030,17 @@ strong {
 
 /* --- Documents Section --- */
 .documents-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  justify-content: center;
 }
 
 .document-card {
   display: flex;
   flex-direction: column;
   padding: 2rem !important;
+  justify-content: center;
 }
 
 .doc-icon {
@@ -1075,9 +1077,10 @@ strong {
 
 /* --- Contact Section --- */
 .contact-wrapper {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
+  justify-content: center;
 }
 
 .contact-info h3 {
@@ -1108,6 +1111,10 @@ strong {
 .info-text h4 {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
+}
+
+.info-text p {
+  margin-bottom: 0;
 }
 
 .info-text a {
@@ -1203,13 +1210,17 @@ strong {
 footer {
   background: var(--bg-darker);
   border-top: 1px solid var(--border-color);
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-container p {
+  margin-bottom: 0;
 }
 
 .footer-logo {
@@ -1504,11 +1515,35 @@ input:-webkit-autofill:active {
     display: none;
   }
 
+}
+
+@media screen and (max-width: 861px) {
   .desktop-hide {
     display: block;
   }
 
   .desktop-view {
+    display: none;
+  }
+
+  .floating-badge.badge-1 {
+    right: -20px;
+  }
+
+  .floating-badge.badge-2 {
+    left: -30px;
+  }
+
+  .floating-badge.badge-3,
+  .floating-badge.badge-4 {
+    left: -80px;
+  }
+
+  .floating-badge.badge-5 {
+    right: -80px;
+  }
+
+  .scroll-indicator {
     display: none;
   }
 }

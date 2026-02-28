@@ -1,0 +1,21 @@
+{
+  "name": "Hasmukh Kalsariya — Senior Full Stack Developer",
+  "short_name": "Hasmukh.dev",
+  "description": "Senior Full Stack Developer with 11+ years in backend systems, API integrations, cloud infrastructure, and scalable architecture.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050810",
+  "theme_color": "#4f8fff",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
